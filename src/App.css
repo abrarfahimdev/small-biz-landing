@@ -61,6 +61,10 @@ body { font-family: 'Segoe UI', sans-serif; transition: background 0.3s, color 0
 .nav-logo { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .nav-links { display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
 .nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto; }
+.nav-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.nav-logo { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.nav-links { display: flex; align-items: center; gap: 8px; }
+.nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 
 /* HERO */
 .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 24px 80px; max-width: 1200px; margin: 0 auto; gap: 60px; }
