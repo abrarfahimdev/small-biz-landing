@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-// ── NAVBAR ─────────────────────────────────────────
 const Navbar = ({ theme, toggleTheme }) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -18,32 +17,31 @@ const Navbar = ({ theme, toggleTheme }) => {
   }
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="nav-container">
-  <div className="nav-logo">
-    <span className="logo-icon">📱</span>
-    <span className="logo-text">SmallBiz</span>
-  </div>
-  <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-    <button onClick={() => scrollTo('about')}>About</button>
-    <button onClick={() => scrollTo('services')}>Services</button>
-    <button onClick={() => scrollTo('contact')}>Contact</button>
-    <button className="nav-cta" onClick={() => scrollTo('contact')}>Get Started</button>
-  </div>
- <div className="nav-actions">
-  <button className="theme-btn" onClick={toggleTheme}>
-    {theme === 'light' ? '🌙' : '☀️'}
-  </button>
-  <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-    {menuOpen ? '✕' : '☰'}
-  </button>
-</div>
-</div>
-    </nav>
+ <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <div className="nav-container">
+      <div className="nav-logo">
+        <span className="logo-icon">📱</span>
+        <span className="logo-text">SmallBiz</span>
+      </div>
+      <div className="nav-right">
+        <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          <button onClick={() => scrollTo('about')}>About</button>
+          <button onClick={() => scrollTo('services')}>Services</button>
+          <button onClick={() => scrollTo('contact')}>Contact</button>
+          <button className="nav-cta" onClick={() => scrollTo('contact')}>Get Started</button>
+        </div>
+        <button className="theme-btn" onClick={toggleTheme}>
+          {theme === 'light' ? '🌙' : '☀️'}
+        </button>
+        <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? '✕' : '☰'}
+        </button>
+      </div>
+    </div>
+  </nav>
   )
 }
 
-// ── HERO ───────────────────────────────────────────
 const Hero = () => {
   const scrollTo = (id) =>
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -82,7 +80,6 @@ const Hero = () => {
   )
 }
 
-// ── ABOUT ──────────────────────────────────────────
 const About = () => {
   const scrollTo = (id) =>
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -124,7 +121,6 @@ const About = () => {
   )
 }
 
-// ── SERVICES ───────────────────────────────────────
 const services = [
   { img: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80', title: 'Digital Strategy', desc: 'Planning your online growth path with data-driven insights and market analysis.', icon: '📊' },
   { img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=80', title: 'UI/UX Design', desc: 'Crafting interfaces that users love through modern design principles.', icon: '🎨' },
@@ -158,7 +154,6 @@ const Services = () => {
   )
 }
 
-// ── CONTACT ────────────────────────────────────────
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [sent, setSent] = useState(false)
@@ -188,7 +183,6 @@ const Contact = () => {
   )
 }
 
-// ── FOOTER ─────────────────────────────────────────
 const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
@@ -221,7 +215,6 @@ const Footer = () => (
   </footer>
 )
 
-// ── MAIN APP ───────────────────────────────────────
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light')
 
