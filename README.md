@@ -1,16 +1,117 @@
-# React + Vite
+# 📱 SmallBiz — Modern Business Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, professional and fully responsive business landing page built with React. Perfect for small businesses, startups and freelancers.
 
-Currently, two official plugins are available:
+![SmallBiz Preview](preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View Live App](https://your-netlify-link.netlify.app)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🎨 **Modern Design** — Clean professional UI
+- 🌙 **Dark / Light Mode** — Smooth theme toggle
+- 📱 **Fully Responsive** — Mobile, tablet and desktop
+- 🧭 **Smooth Scroll Navigation** — Click links to scroll
+- 📬 **Contact Form** — With success message
+- ⚡ **Fast Loading** — Built with Vite
+- 🎯 **Hover Animations** — Smooth interactions
+
+---
+
+## 📄 Sections
+
+| Section | Description |
+|---------|-------------|
+| **Navbar** | Sticky nav with mobile hamburger menu |
+| **Hero** | Headline, CTA buttons and stats |
+| **About** | Company info with feature points |
+| **Services** | 3 service cards with hover effects |
+| **Contact** | Form with validation |
+| **Footer** | Links and copyright |
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React 18 | Frontend UI |
+| Vite | Build tool |
+| CSS Variables | Dark/Light theming |
+
+---
+
+## 📦 Setup
+
+```bash
+git clone https://github.com/abrarfahimdev/small-biz-landing.git
+cd small-biz-landing
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🚀 Deploy (Netlify)
+
+1. Push to GitHub
+2. Import on [netlify.com](https://netlify.com)
+3. Click Deploy ✅
+
+---
+
+## 🔧 Scripts
+
+```bash
+npm run dev       # Development
+npm run build     # Production build
+npm run preview   # Preview build
+```
+
+---
+
+## 🎨 Customize Colors
+
+Edit `src/App.css`:
+```css
+body[data-theme='light'] {
+  --accent: #2563eb;  /* Change primary color */
+}
+```
+
+---
+
+## 🤝 Use Cases
+
+- 🏢 Small business websites
+- 👨‍💼 Freelancer portfolio pages
+- 🏥 Clinic or doctor websites
+- 🍕 Restaurant pages
+- 🏠 Real estate pages
+
+---
+
+## 👨‍💻 Author
+
+**Abrar Fahim**
+- GitHub: [@abrarfahimdev](https://github.com/abrarfahimdev)
+- Fiverr: [abrar7780](https://fiverr.com/abrar7780)
+- Email: fahimabrarcse7780@gmail.com
+
+---
+
+## ⭐ Support
+
+Give it a ⭐ if you found it helpful!
+
+---
+
+*Built to demonstrate React component architecture and UI design skills.*
