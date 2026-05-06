@@ -57,6 +57,10 @@ body { font-family: 'Segoe UI', sans-serif; transition: background 0.3s, color 0
 .theme-btn { background: var(--bg2); border: 1px solid var(--border); width: 40px; height: 40px; border-radius: 8px; cursor: pointer; font-size: 18px; transition: all 0.2s; }
 .theme-btn:hover { border-color: var(--accent); }
 .hamburger { display: none; background: none; border: 1px solid var(--border); color: var(--text); width: 40px; height: 40px; border-radius: 8px; cursor: pointer; font-size: 18px; }
+.nav-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 16px; width: 100%; }
+.nav-logo { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.nav-links { display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
+.nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; margin-left: auto; }
 
 /* HERO */
 .hero { min-height: 100vh; display: flex; align-items: center; padding: 120px 24px 80px; max-width: 1200px; margin: 0 auto; gap: 60px; }
