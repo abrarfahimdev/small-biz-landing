@@ -30,14 +30,14 @@ const Navbar = ({ theme, toggleTheme }) => {
     <button onClick={() => scrollTo('contact')}>Contact</button>
     <button className="nav-cta" onClick={() => scrollTo('contact')}>Get Started</button>
   </div>
-  <div className="nav-actions">
-    <button className="theme-btn" onClick={toggleTheme}>
-      {theme === 'light' ? '🌙' : '☀️'}
-    </button>
-    <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-      {menuOpen ? '✕' : '☰'}
-    </button>
-  </div>
+ <div className="nav-actions">
+  <button className="theme-btn" onClick={toggleTheme}>
+    {theme === 'light' ? '🌙' : '☀️'}
+  </button>
+  <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+    {menuOpen ? '✕' : '☰'}
+  </button>
+</div>
 </div>
     </nav>
   )
