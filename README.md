@@ -8,7 +8,7 @@ A clean, professional and fully responsive business landing page built with Reac
 
 ## 🚀 Live Demo
 
-[View Live App](https://your-netlify-link.netlify.app)
+[View Live App](https://small-biz-landing.vercel.app/)
 
 ---
 
